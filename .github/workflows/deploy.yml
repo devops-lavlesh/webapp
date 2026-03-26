@@ -23,6 +23,8 @@ jobs:
 
     - name: Build app
       run: npm run build
+    - name: Check build folder
+      run: ls -la      
       env:
         CI: false  
 
