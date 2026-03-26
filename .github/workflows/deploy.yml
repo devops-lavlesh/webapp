@@ -23,10 +23,11 @@ jobs:
 
     - name: Build app
       run: npm run build
-    - name: Check build folder
-      run: ls -la      
       env:
         CI: false  
+    - name: Check build folder
+      run: ls -la      
+        
 
     # React case: build folder deploy hota hai
     - name: Deploy to Azure Web App
